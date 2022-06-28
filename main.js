@@ -19,12 +19,12 @@ function makePage(data) {
     setData('precipitation_sum'+i,data.daily.precipitation_sum[i] + 'mm');
   }
 
+  const body = document.getElementById('body');
+  body.classList= [];
   if ( data.daily.precipitation_sum[0] > 0 ) {
-    document.getElementById('body').style.backgroundImage
-     = 'linear-gradient(#ccf 5%, #fff 10%)';
+    body.classList.add("rainy");
   } else {
-    document.getElementById('body').style.backgroundImage
-     = 'linear-gradient(#fec 5%, #fff 10%)';
+    body.classList.add("sunshine");
   }
 }
 

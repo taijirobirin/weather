@@ -22,3 +22,14 @@ table,tr,td,th {
 a {
   font-size:2vw;
 }
+img {
+  width:20vw;
+}
+.rainy {
+  background-image:url(img/water-drops-on-glass.jpg);
+  background-size: cover;
+}
+.sunshine {
+  background-image:url(img/white-cloud-on-blue-sky.jpg);
+  background-size: cover;
+}
